@@ -130,16 +130,6 @@ def level4(screen):
     return level_4
 
 
-def level5(screen):
-    level_5 = classes.Level(screen, 100, 100, 7, 7)
-    level_5.add_player(front.Player(images.load_images_player()), 0, 0)
-    level_5.add_finish(back.NextLevelTile(images.ladder()), 4, 4)
-
-    level_5.tiles[0][0].bottom_obj = back.Spring('right', 6, images.arrow())
-    level_5.tiles[6][0].bottom_obj = back.Spring('down', 6, images.arrow())
-    level_5.tiles[6][6].bottom_obj = back.Spring('left', 6, images.arrow())
-    level_5.tiles[0][6].bottom_obj = back.Spring('up', 6, images.arrow())
-    return level_5
 
 
 LIST_OF_LEVELS = (level1, level2, level3, level4)

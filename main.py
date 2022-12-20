@@ -17,7 +17,7 @@ finished = [False]
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.mixer.music.load("Sound/Backround.mp3")
 pygame.mixer.music.play(-1)
-LEVELS = [levels.level1(screen), levels.level2(screen), levels.level3(screen), levels.level4(screen), levels.level5(screen)]
+LEVELS = [levels.level1(screen), levels.level2(screen), levels.level3(screen), levels.level4(screen)]
 cur_level = 0
 
 
